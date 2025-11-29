@@ -1,5 +1,7 @@
 {
   "devDependencies": {
+    "@commitlint/cli": "^20.1.0",
+    "@commitlint/config-conventional": "^20.0.0",
     "lefthook": "^2.0.4",
     "prettier": "^3.7.2"
   }

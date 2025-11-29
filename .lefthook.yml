@@ -2,3 +2,10 @@ pre-commit:
   jobs:
     - name: prettier
       run: npx --no-install prettier --check .
+
+commit-msg:
+  jobs:
+    - name: commitlint
+      only:
+        - ref: main
+      run: npx --no-install commitlint --edit "{1}"
