@@ -15,14 +15,21 @@ classifiers = [
   "Programming Language :: Python :: 3.14",
 ]
 dynamic = ["version"]
+dependencies = [
+  "typing-extensions>=4.15.0,<5",
+]
 
 [dependency-groups]
 dev = [
   { include-group = "debug" },
+  { include-group = "mypy" },
   { include-group = "ruff" },
 ]
 debug = [
   "ipython>=8.37.0,<9",
+]
+mypy = [
+  "mypy>=1.19.0,<2",
 ]
 ruff = [
   "ruff>=0.14.7,<0.15",
