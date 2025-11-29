@@ -5,6 +5,11 @@ ignore = [
 ]
 select = ["ALL"]
 
+[lint.per-file-ignores]
+"tests/**/*.py" = [
+  "S101",
+]
+
 [lint.isort]
 required-imports = [
   "from __future__ import annotations",
