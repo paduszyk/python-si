@@ -1,0 +1,14 @@
+[lint]
+ignore = [
+  "D1",
+  "E501",
+]
+select = ["ALL"]
+
+[lint.isort]
+required-imports = [
+  "from __future__ import annotations",
+]
+
+[lint.pydocstyle]
+convention = "google"

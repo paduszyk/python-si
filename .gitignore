@@ -1,5 +1,6 @@
 __pycache__/
 .lefthook-local.yml
+.ruff_cache/
 .venv/
 *.egg-info/
 build/

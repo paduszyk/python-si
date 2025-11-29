@@ -4,6 +4,15 @@ pre-commit:
       run: npx --no-install prettier --check .
     - name: uv
       run: uv lock --check
+    - name: ruff
+      env:
+        UV_NO_SYNC: "true"
+      group:
+        jobs:
+          - name: check
+            run: uv run ruff check .
+          - name: format
+            run: uv run ruff format --diff .
 
 commit-msg:
   jobs:
