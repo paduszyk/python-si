@@ -2,6 +2,7 @@ __pycache__/
 .coverage
 .lefthook-local.yml
 .mypy_cache/
+.nox/
 .pytest_cache/
 .ruff_cache/
 .venv/

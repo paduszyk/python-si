@@ -23,6 +23,7 @@ dependencies = [
 dev = [
   { include-group = "debug" },
   { include-group = "mypy" },
+  { include-group = "nox" },
   { include-group = "pytest" },
   { include-group = "ruff" },
 ]
@@ -31,7 +32,12 @@ debug = [
 ]
 mypy = [
   "mypy>=1.19.0,<2",
+  { include-group = "nox" },
   { include-group = "pytest" },
+]
+nox = [
+  "nox==2025.11.12",
+  "tomli>=2.3.0,<3; python_version < '3.11'",
 ]
 pytest = [
   "pytest>=9.0.1,<10",
